@@ -343,6 +343,11 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
+#Add additional VS files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
 # OpenCover UI analysis results
 OpenCover/
 
