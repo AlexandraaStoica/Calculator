@@ -37,14 +37,14 @@ bool Calculator::isWorking(int batteryLevel)
 	}
 }
 
-void operator>>(istream& console, const Calculator& c)
+void operator>>(istream& console, Calculator& c)
 {
-	//console>> this->batteryLevel;
+	
 }
 	
 void operator<<(ostream& console, const Calculator& c)
 {
-	//console << "Nivelul bateriei este: " << c.batteryLevel;
+	console << "Nivelul bateriei este: " << c.batteryLevel;
 }
 
 //~Calculator::Calculator()
