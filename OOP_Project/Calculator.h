@@ -7,16 +7,20 @@ using namespace std;
 
 class Calculator
 {
-	int batteryLevel=0;
-	bool hasBattery=false;
+	int batteryLevel;
+	bool hasBattery;
 
 public:
 
 	Calculator();
 	Calculator(int batteryLevel);
 
+	int getBatteryLevel();
+
 	bool isWorking(int batteryLevel);
 
 	friend void operator>>(istream& console, const Calculator& c);
 	friend void operator<<(ostream& console, const Calculator& c);
+
+	~Calculator();
 };
