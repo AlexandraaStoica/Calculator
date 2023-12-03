@@ -7,5 +7,10 @@ using namespace std;
 
 class Elements
 {
+	
 
+public:
+	Elements();
+	Elements();
+		
 };

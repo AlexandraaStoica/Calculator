@@ -1,5 +1,9 @@
 ﻿#include<iostream>
 #include<string>
+#include<cmath>
+#include<sstream>
+#include<stack>
+#include<vector>
 
 
 using namespace std;
@@ -54,11 +58,11 @@ ostream& operator<<(ostream& console, const Token& token)
 // Expression.h
 class Expression {
 private:
-    vector<Token> tokens;
+    char* tokens;
 
 public:
     Expression();
-    Expression(const vector<Token>& tokList);
+    Expression(const char* tokList);
 
     void addToken(const Token& token);
     double evaluate() const;
@@ -73,7 +77,7 @@ Expression::Expression()
 
 }
 
-Expression::Expression(const vector<Token>& tokList) : tokens(tokList) 
+Expression::Expression(const vector<Token>& tokList):tokens(tokList) 
 {
 
 }

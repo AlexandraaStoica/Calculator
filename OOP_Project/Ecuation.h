@@ -7,5 +7,6 @@ using namespace std;
 
 class Ecuation
 {
-
+	char* ecuation;
+	int noElements;
 }; 
